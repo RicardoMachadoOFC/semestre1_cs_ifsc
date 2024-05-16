@@ -7,12 +7,12 @@ public class Exercicio02 {
         Scanner input = new Scanner(System.in);
 
     
-        System.out.print("Digite um número ");
+        System.out.print("Digite um número: ");
         int numero = input.nextInt();
 
-        System.out.println("seu numero é: " + numero + ", o antecessor é: " + (numero - 1) + ", seu sucessor é: " + (numero - 1));
+        System.out.println("seu numero : " + numero + ", o antecessor : " + (numero - 1) + ", seu sucessor : " + (numero + 1));
 
        
-        scanner.close();
+
     }
 }
