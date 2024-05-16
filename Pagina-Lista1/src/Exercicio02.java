@@ -12,7 +12,7 @@ public class Exercicio02 {
 
         System.out.println("seu numero : " + numero + ", o antecessor : " + (numero - 1) + ", seu sucessor : " + (numero + 1));
 
-       
+        input.close();
 
     }
 }

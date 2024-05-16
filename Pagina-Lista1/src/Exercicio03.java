@@ -18,7 +18,7 @@ public class Exercicio03 {
         System.out.print("seu nome: " + nome + ", seu endereço: " + endereco + " seu telefone: " +  telefone);
 
 
-
+        input.close();
 
     }
 }

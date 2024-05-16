@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 public class Exercicio01 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
 
         System.out.print("Digite o primeiro numero: ");
-        double numero1 = scanner.nextDouble();
+        double numero1 = input.nextDouble();
 
         System.out.print("Digite o segundo numero: ");
-        double numero2 = scanner.nextDouble();
+        double numero2 = input.nextDouble();
 
         double soma = numero1 + numero2;
 
         System.out.println("A soma dos dois numeros é: " + soma);
       
-        scanner.close();
+        input.close();
     }
 }
