@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class Exercicio08 { // Escreva um algoritmo que calcule a raiz quadrada de um número informado pelo
-                           // usuário
+public class Exercicio08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,21 +10,21 @@ public class Exercicio08 { // Escreva um algoritmo que calcule a raiz quadrada d
         if (numero < 0) {
             System.out.println("Não é possível calcular a raiz quadrada de um número negativo.");
         } else {
-            double raizQuadrada = calcularRaizQuadrada(numero);
+            double raizQuadrada = raizQuadrada(numero);
             System.out.println("A raiz quadrada de " + numero + " é: " + raizQuadrada);
         }
 
         scanner.close();
     }
 
-    public static double calcularRaizQuadrada(double numero) {
-        double epsilon = 1e-10; // Precisão desejada
-        double raiz = numero;
+    public static double raizQuadrada(double numero) {
+        double estimativa = numero;
+        double precisao = 0.00001; // Definindo a precisão desejada
 
-        while (Math.abs(raiz - numero / raiz) > epsilon * raiz) {
-            raiz = (raiz + numero / raiz) / 2.0;
+        while ((estimativa - numero / estimativa) > precisao) {
+            estimativa = (estimativa + numero / estimativa) / 2;
         }
 
-        return raiz;
+        return estimativa;
     }
 }
