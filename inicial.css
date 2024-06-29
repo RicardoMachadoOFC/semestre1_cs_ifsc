@@ -1,0 +1,56 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: #28a745; /* Verde principal */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li a {
+    color: #28a745; /* Verde principal */
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilizando os links e listas */
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Estilizando os títulos das listas */
+ul li a {
+    font-weight: bold;
+}
+
